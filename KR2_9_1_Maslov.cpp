@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int maxel(double a[][100], int strok, int k) {
+int maxel(double a[100][100], int strok, int k) {
 	int stroki = 0;
 	double max_element = a[0][k];
 
@@ -32,7 +32,7 @@ int main() {
 	cout << "Введите номер столбца: ";
 	cin >> k;
 	k -= 1;
-	if (k > strok || k > stolb) {
+	if (k > stolb) {
 		cout << "Столб выходит за пределы матрицы";
 		return 0;
 	}
